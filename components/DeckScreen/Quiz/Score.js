@@ -86,7 +86,7 @@ class Score extends Component {
                     <Progress.Circle size={80} formatText={() => `${percent}%`} animated={true} progress={(this.state.score/100)} showsText={true}/>
                   )}
                 </View>
-                <View style={styles.scoreTitleContainer}>
+                <View style={styles.scoreTitleWrapper}>
                   <Text style={styles.scoreText}>{this.state.text}</Text>
                 </View>
               </View>
