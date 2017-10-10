@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { StyleSheet, Text, View, TouchableOpacity, ImageBackground } from 'react-native'
 import { connect } from 'react-redux'
-import { white } from '../../../utils/colors'
+import { white, gray } from '../../../utils/colors'
 import { getBgImage } from '../../../utils/bgImages'
 import TextButton  from '../../TextButton'
 import DeckButton  from '../../DeckButton'
@@ -32,7 +32,7 @@ class DeckViewScreen extends Component {
           </View>
         </View>
         <View style={styles.buttonsContainer}>
-          <TextButton>Add Card</TextButton>
+          <TextButton onPress={() => navigation.navigate('NewQuestionScreen', {index : index, deck : deck})}>Add Card</TextButton>
         </View>
       </ImageBackground>
     )
@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
     fontSize: 35,
   },
   deckQuantity: {
-    color: '#9B9B9B'
+    color: gray,
   },
   buttonsContainer: {
     flex: 1,
