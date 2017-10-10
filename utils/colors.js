@@ -1,0 +1,10 @@
+
+export const white = '#FFFFFF'
+export const blue = '#00A5F8'
+export const gray = '#9B9B9B'
+export const greenButtonBackground = '#DEEF9C'
+export const greenButtonText = '#78B12A'
+export const greenButtonBorder = '#B5C866'
+export const redButtonBackground = '#FFCDC6'
+export const redButtonText = '#DF0E10'
+export const redButtonBorder = '#E9A59B'
