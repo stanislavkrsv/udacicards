@@ -26,9 +26,17 @@ class DeckViewScreen extends Component {
           <View style={styles.deck}>
             <View style={styles.deckTitleContainer}>
               <Text style={styles.deckTitle}>{deck.title}</Text>
-              <Text style={styles.deckQuantity}>{deck.questions.length} cards</Text>
+              {deck.questions.length > 0 ? (
+                <Text style={styles.deckQuantity}>{deck.questions.length} cards</Text>
+              ) : (
+                <Text style={styles.deckQuantity}>
+                  Deck is empty
+                </Text>
+              )}
             </View>
-            <DeckButton onPress={() => navigation.navigate('QuizScreen', {index : index, deck : deck})}>Start Quiz</DeckButton>
+            {deck.questions.length > 0 && (
+              <DeckButton onPress={() => navigation.navigate('QuizScreen', {index : index, deck : deck})}>Start Quiz</DeckButton>
+            )}
           </View>
         </View>
         <View style={styles.buttonsContainer}>
