@@ -25,7 +25,7 @@ class NewQuestionScreen extends Component {
 
     addQuestion(deck.id, {question , answer})
     this.reset()
-    navigation.navigate('DeckViewScreen', {index : 1, id : deck.id, title: deck.title})
+    navigation.goBack()
   }
 
   reset = () => {

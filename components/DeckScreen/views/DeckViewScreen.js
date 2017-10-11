@@ -15,10 +15,10 @@ class DeckViewScreen extends Component {
     }
   }
 
+
   render() {
 
-    const  { navigation, deck } = this.props
-    const  { index } = navigation.state.params
+    const  { index, questionCount , deck, navigation } = this.props
 
     return (
       <ImageBackground resizeMode="repeat" style={styles.container} source={getBgImage(index)}>
@@ -27,7 +27,7 @@ class DeckViewScreen extends Component {
             <View style={styles.deckTitleContainer}>
               <Text style={styles.deckTitle}>{deck.title}</Text>
               {deck.questions.length > 0 ? (
-                <Text style={styles.deckQuantity}>{deck.questions.length} cards</Text>
+                <Text style={styles.deckQuantity}>{questionCount} cards</Text>
               ) : (
                 <Text style={styles.deckQuantity}>
                   Deck is empty
@@ -90,15 +90,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-
 })
 
 
 function mapStateToProps({ decks }, { navigation }) {
   let { id } = navigation.state.params
+  let index = navigation.state.params.index || decks.length - 1;
   let deck = decks.find(item => item.id === id)
   return {
-    deck
+    deck: deck,
+    questionCount: deck.questions.length,
+    index: index
   }
 }
 
