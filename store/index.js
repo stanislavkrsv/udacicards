@@ -3,6 +3,10 @@ import { AsyncStorage } from 'react-native'
 import thunk from 'redux-thunk';
 import reducer from '../reducers'
 
-const store = createStore(reducer)
+
+const store = createStore(
+  reducer,
+  applyMiddleware(thunk)
+)
 
 export default store
