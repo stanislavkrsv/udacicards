@@ -5,13 +5,19 @@ import { DrawerNavigator, DrawerItems } from 'react-navigation'
 import  {SimpleLineIcons } from '@expo/vector-icons'
 
 import  DeckNavigator  from './DeckScreen/navigationConfiguration'
+import  NewDeckNavigator  from './NewDeckScreen/navigationConfiguration'
 
 const MainNavigation = DrawerNavigator({
     Desks: {
       screen: DeckNavigator,
       navigationOptions: {
-        //tabBarLabel: 'Desks0',
-        title: 'Home',
+        title: 'Decks',
+      }
+    },
+    NewDesks: {
+      screen: NewDeckNavigator,
+      navigationOptions: {
+        title: 'New Deck',
       }
     },
   },

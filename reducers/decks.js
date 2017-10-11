@@ -7,9 +7,14 @@ import {
 
 function decks(state = defaultState, action) {
 
-  const { deckId, question } = action
+  const { deck, deckId, question } = action
 
   switch (action.type) {
+    case ADD_DECK: {
+      let newState = state.slice();
+      newState.push(deck);
+      return newState
+    }
     case ADD_QUESTION: {
       const index = state.findIndex(data => data.id === deckId)
       const deck = state.find(data => data.id === deckId)

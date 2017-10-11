@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     flex:0.3,
     borderColor: greenButtonBorder,
     backgroundColor: greenButtonBackground,
-    minHeight: 25,
+    minHeight: 35,
     borderBottomLeftRadius: 10,
     borderBottomRightRadius: 10,
     justifyContent: 'center',

@@ -2,26 +2,17 @@ import React from 'react';
 import { StackNavigator } from 'react-navigation'
 import  {SimpleLineIcons } from '@expo/vector-icons'
 import { blue, white } from '../../utils/colors'
-
-import  DeckListScreen  from './views/DeckListScreen'
+import  NewDeckScreen  from './views/NewDeckScreen'
+import  DrawerOpenButton from '../DrawerOpenButton'
 
 const NewDeckNavigator = StackNavigator({
-  DeckListScreen: {
-    screen: DeckListScreen,
+  NewDeckScreen: {
+    screen: NewDeckScreen,
     navigationOptions: ({ navigation, defaultHeader }) => ({
       ...defaultHeader,
       title: 'Desks',
-      headerLeft: <SimpleLineIcons name="menu" color={white} size={24} onPress={()=>{ navigation.navigate('DrawerOpen')}}/>,
+      headerLeft: <DrawerOpenButton navigation={navigation}/>,
     })},
-  /*
-  DesksInfo: {
-    screen: DeckListScreen,
-    navigationOptions: ({ navigation, defaultHeader }) => ({
-      ...defaultHeader,
-      title: 'Tibbtle',
-    })
-  },
-  */
   },
   {
     navigationOptions: ({ navigation }) => ({

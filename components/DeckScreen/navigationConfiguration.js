@@ -14,7 +14,7 @@ const DeckNavigator = StackNavigator({
     screen: DeckListScreen,
     navigationOptions: ({ navigation, defaultHeader }) => ({
       ...defaultHeader,
-      title: 'Home',
+      title: 'Decks',
       headerLeft: <DrawerOpenButton navigation={navigation}/>,
     })},
 
@@ -43,7 +43,7 @@ const DeckNavigator = StackNavigator({
 
   },
   {
-    initialRouteName: 'QuizScreen',
+    initialRouteName: 'DeckListScreen',
     navigationOptions: ({ navigation }) => ({
       headerMode: 'screen',
       headerStyle: {
