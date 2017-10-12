@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { StyleSheet, Text, View, TextInput} from 'react-native'
 import { connect } from 'react-redux'
 import uuidv4 from 'uuid/v4'
-//import { NavigationActions } from 'react-navigation'
 import { addDeck } from '../../../actions'
 import { white, gray, blue } from '../../../utils/colors'
 import DeckButton  from '../../DeckButton'
@@ -51,7 +50,7 @@ class NewDeckScreen extends Component {
                 />
               </View>
             </View>
-            <DeckButton onPress={this.submit}>Submit</DeckButton>
+            <DeckButton onPress={this.submit}>Create Deck</DeckButton>
           </View>
         </View>
       </View>
