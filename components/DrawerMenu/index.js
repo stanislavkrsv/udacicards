@@ -1,15 +1,15 @@
-import React , { Component }from 'react';
-import { StyleSheet, Text, View, Image, ImageBackground, Linking, TouchableOpacity } from 'react-native';
+import React , { Component }from 'react'
+import { StyleSheet, Text, View, Image, ImageBackground, Linking, TouchableOpacity, StatusBar } from 'react-native'
 import { gray } from '../../utils/colors'
 import { Constants } from 'expo'
 import { DrawerItems } from 'react-navigation'
 import { getBgImage } from '../../utils/bgImages'
 
 class DrawerMenu extends Component {
-
   render() {
     return(
       <View style={styles.container}>
+        <StatusBar barStyle='light-content' />
         <ImageBackground style={styles.header} resizeMode="repeat" source={getBgImage(0)}>
           <Image source={require('./../../assets/images/icon.png')} style={styles.headerIcon} resizeMode='contain'/>
         </ImageBackground>
