@@ -12,6 +12,7 @@ class Score extends Component {
     score: 0,
     lose: false,
     text: '',
+    interfaceTimer: null,
     showProgressBar: false,
     useNativeDriver: true,
     opacity: new Animated.Value(0),
@@ -41,25 +42,29 @@ class Score extends Component {
         useNativeDriver: this.state.useNativeDriver,
       }),
     ]).start(()=> {
-
-      if (!this.interfaceTimer) {
-        this.interfaceTimer = setTimeout(() => {
+      if (this.state.interfaceTimer === null) {
+        let interfaceTimer = setTimeout(() => {
           this.setState({showProgressBar: true})
 
           if (percent <= 50) {
-            this.setState({lose: true})
-            this.setState({text: '...?'})
+            this.setState({
+              lose: true,
+              text: '...?'
+            })
           } else {
             this.setState({text: 'You Rock!'})
           }
-          this.timer = setTimeout(() => {
-            this.setState({score: percent})
-            this.timer = null
-          }, 200)
-          this.interfaceTimer = null
+          this.setState({score: percent, interfaceTimer: null})
         }, 500)
+        this.setState({interfaceTimer})
       }
     })
+  }
+
+  componentWillUnmount() {
+    if (this.state.interfaceTimer !== null) {
+      clearInterval(this.state.interfaceTimer)
+    }
   }
 
   getImage = () => {
