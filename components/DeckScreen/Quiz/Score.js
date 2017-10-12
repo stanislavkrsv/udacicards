@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { StyleSheet, Text, View, Image, Animated } from 'react-native'
 import  { MaterialCommunityIcons } from '@expo/vector-icons'
 import * as Progress from 'react-native-progress'
+import { clearLocalNotification, setLocalNotification } from '../../../utils/notification'
 import DeckButton  from '../../DeckButton'
 import TextButton  from '../../TextButton'
 import  { white } from '../../../utils/colors'
@@ -23,6 +24,9 @@ class Score extends Component {
   componentDidMount() {
 
     const { percent } = this.props
+
+    clearLocalNotification()
+     .then(setLocalNotification())
 
     Animated.timing(this.state.opacity, {
       toValue: 1,
@@ -111,12 +115,10 @@ class Score extends Component {
 }
 
 const styles = StyleSheet.create({
-
   container: {
     flex: 1,
     paddingTop: 30
   },
-
   scoreContainer: {
     flex: 5,
     justifyContent: 'center',
