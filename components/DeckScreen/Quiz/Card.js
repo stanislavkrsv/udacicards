@@ -21,7 +21,7 @@ class Card extends Component {
     rotate: new Animated.Value(0),
     opacity: new Animated.Value(0),
     bounceValue: new Animated.Value(1)
-  };
+  }
 
   onCorrectPress = () => {
     const { onNextCard } = this.props

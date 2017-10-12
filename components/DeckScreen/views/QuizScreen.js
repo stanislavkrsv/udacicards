@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { StyleSheet, Text, View, ImageBackground } from 'react-native'
-import * as Progress from 'react-native-progress';
+import * as Progress from 'react-native-progress'
 import { white } from '../../../utils/colors'
 import { getBgImage } from '../../../utils/bgImages'
 import { correctButtonEventName , incorrectButtonEventName } from '../../../utils/const'

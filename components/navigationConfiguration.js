@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import { DrawerNavigator } from 'react-navigation'
 import  {SimpleLineIcons, MaterialCommunityIcons } from '@expo/vector-icons'
 
@@ -29,4 +29,4 @@ const MainNavigation = DrawerNavigator({
   {contentComponent: props => (<DrawerMenu {...props}/>)}
 )
 
-export default MainNavigation;
+export default MainNavigation

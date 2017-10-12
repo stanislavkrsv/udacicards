@@ -33,7 +33,7 @@ class NewQuestionScreen extends Component {
       question: '',
       answer: ''
     })
-  };
+  }
 
   render() {
 

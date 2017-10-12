@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { StyleSheet, Text, View, FlatList, TouchableOpacity, ImageBackground } from 'react-native';
+import { StyleSheet, Text, View, FlatList, TouchableOpacity, ImageBackground } from 'react-native'
 import { blue, white } from '../../../utils/colors'
 import { getBgImage } from '../../../utils/bgImages'
 
 
 class DeckListScreen extends Component {
 
-  _keyExtractor = (item, index) => item.id;
+  _keyExtractor = (item, index) => item.id
 
   _renderItem = ({item, index}) => {
     const { navigation } = this.props
@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'transparent',
     color: white,
   }
-});
+})
 
 
 function mapStateToProps({decks}) {

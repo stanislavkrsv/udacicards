@@ -20,7 +20,7 @@ class NewDeckScreen extends Component {
       return
     }
 
-    const deck = {id : uuidv4(), title : title, questions: []};
+    const deck = {id : uuidv4(), title : title, questions: []}
     addDeck(deck)
     this.reset()
     navigation.navigate('DeckViewScreen', {id: deck.id, title: deck.title})
@@ -30,7 +30,7 @@ class NewDeckScreen extends Component {
     this.setState({
       title: '',
     })
-  };
+  }
 
   render() {
     return (

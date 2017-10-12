@@ -207,24 +207,3 @@ export const defaultState = [
     ]
   },
 ]
-
-
-
-/*
- case ADD_CARD:
- return {
- ...state,
- decks: {
- ...state.decks,
- [action.deck]: {
- ...state.decks[action.deck],
- questions: [
- ...state.decks[action.deck].questions, ...action.card //i.e. {question: '?', answer: '!'}
- ]
- }
- }
- }
-
-
-*
-* */

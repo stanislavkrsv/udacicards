@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import { StackNavigator } from 'react-navigation'
 import  {SimpleLineIcons } from '@expo/vector-icons'
 import { blue, white } from '../../utils/colors'
