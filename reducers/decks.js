@@ -11,8 +11,8 @@ function decks(state = defaultState, action) {
 
   switch (action.type) {
     case ADD_DECK: {
-      let newState = state.slice();
-      newState.push(deck);
+      let newState = state.slice()
+      newState.push(deck)
       return newState
     }
     case ADD_QUESTION: {
