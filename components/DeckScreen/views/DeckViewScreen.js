@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
 
 function mapStateToProps({ decks }, { navigation }) {
   let { id } = navigation.state.params
-  let index = navigation.state.params.index || decks.length - 1;
+  let index = navigation.state.params.index === undefined ?  decks.length - 1 : navigation.state.params.index
   let deck = decks.find(item => item.id === id)
   return {
     deck: deck,
