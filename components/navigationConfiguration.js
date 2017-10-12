@@ -1,9 +1,8 @@
 import React from 'react';
-import {Text, View } from 'react-native';
-import  { Constants } from 'expo'
-import { DrawerNavigator, DrawerItems } from 'react-navigation'
-import  {SimpleLineIcons } from '@expo/vector-icons'
+import { DrawerNavigator } from 'react-navigation'
+import  {SimpleLineIcons, MaterialCommunityIcons } from '@expo/vector-icons'
 
+import  DrawerMenu from './DrawerMenu'
 import  DeckNavigator  from './DeckScreen/navigationConfiguration'
 import  NewDeckNavigator  from './NewDeckScreen/navigationConfiguration'
 
@@ -12,16 +11,22 @@ const MainNavigation = DrawerNavigator({
       screen: DeckNavigator,
       navigationOptions: {
         title: 'Decks',
+        drawerIcon: ({ tintColor }) => (
+          <MaterialCommunityIcons name={'cards-outline'} color={tintColor} size={25}/>
+        )
       }
     },
     NewDesks: {
       screen: NewDeckNavigator,
       navigationOptions: {
-        title: 'New Deck',
+        title: 'Add New Deck',
+        drawerIcon: ({ tintColor }) => (
+          <MaterialCommunityIcons name={'plus'} color={tintColor} size={25}/>
+        )
       }
     },
   },
-  {contentComponent: props => (<View><View style={{paddingTop: Constants.statusBarHeight, height: 140}}><Text>Hallo</Text></View><DrawerItems {...props} /></View>)}
+  {contentComponent: props => (<DrawerMenu {...props}/>)}
 )
 
 export default MainNavigation;
