@@ -76,7 +76,7 @@ class Card extends Component {
       this.timer = setTimeout(() => {
         this.setState({isFlipped: !this.state.isFlipped})
         this.timer = null
-      }, 90)
+      }, 50)
     }
     Animated.spring(this.state.rotate, {
       toValue: Number(!isFlipped),
