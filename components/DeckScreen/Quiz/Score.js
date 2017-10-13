@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { StyleSheet, Text, View, Image, Animated } from 'react-native'
+import PropTypes from 'prop-types'
 import  { MaterialCommunityIcons } from '@expo/vector-icons'
 import * as Progress from 'react-native-progress'
 import { clearLocalNotification, setLocalNotification } from '../../../utils/notification'
@@ -8,6 +9,11 @@ import TextButton  from '../../TextButton'
 import  { white } from '../../../utils/colors'
 
 class Score extends Component {
+
+  static propTypes = {
+    percent : PropTypes.number.isRequired,
+    onRestartQuiz: PropTypes.func.isRequired
+  }
 
   state = {
     score: 0,

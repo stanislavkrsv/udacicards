@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { StyleSheet, Text, View, TouchableOpacity, Animated } from 'react-native'
+import PropTypes from 'prop-types'
 import  { MaterialCommunityIcons } from '@expo/vector-icons'
 import { correctButtonEventName , incorrectButtonEventName } from '../../../utils/const'
 import  {
@@ -14,6 +15,12 @@ import  {
 } from '../../../utils/colors'
 
 class Card extends Component {
+
+  static propTypes = {
+    card : PropTypes.object.isRequired,
+    show: PropTypes.bool.isRequired,
+    onNextCard: PropTypes.func.isRequired
+  }
 
   state = {
     isFlipped: false,
