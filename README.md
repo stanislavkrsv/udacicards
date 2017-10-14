@@ -1,4 +1,4 @@
-# UdaciCard
+# UdaciCard 
 Mobile application (iOS and Android) that allows users to study collections of flashcards. 
 The app allow users to create different categories of flashcards called "decks", add flashcards to those decks, 
 then take quizzes on those decks.
@@ -28,7 +28,8 @@ $ npm start
 ```
 
 ## Supported OS
-Tested on iOS 10.3 and Android 7.0.0
+Tested on iOS 10.3 and Android 7.0.0. 
+Strongly recommend use iOS 😀. 
 
 
 ## License
