@@ -155,7 +155,9 @@ const styles = StyleSheet.create({
   text: {
     fontFamily: 'common-font-bold',
     fontSize: 35,
-    textAlign: 'center'
+    textAlign: 'center',
+    paddingLeft: 10,
+    paddingRight: 10,
   },
   deckContainer: {
     flex: 1,
