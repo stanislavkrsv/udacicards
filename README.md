@@ -29,9 +29,8 @@ $ npm start
 
 ## Supported OS
 Tested on iOS 10.3 and Android 7.0.0. 
-Strongly recommend use iOS 😀. 
+Strongly recommend use iOS 😀
 
 
 ## License
-Readable is released under the [WT
-FPL License](LICENSE)
+Readable is released under the [WTFPL License](LICENSE)
