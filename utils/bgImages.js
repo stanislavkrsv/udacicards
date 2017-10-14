@@ -1,3 +1,6 @@
+import { Platform } from 'react-native'
+export const IMAGE_RESIZE_MODE = (Platform.OS === 'ios' ? 'repeat' : 'cover')
+
 export const backgroundImages = [
   require('./../assets/bg/1.png'),
   require('./../assets/bg/2.png'),

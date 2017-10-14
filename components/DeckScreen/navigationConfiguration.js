@@ -1,5 +1,7 @@
 import React from 'react'
 import { StackNavigator } from 'react-navigation'
+import { Constants } from 'expo'
+import { Platform } from 'react-native'
 import  {SimpleLineIcons } from '@expo/vector-icons'
 import { blue, white } from '../../utils/colors'
 
@@ -44,6 +46,9 @@ const DeckNavigator = StackNavigator({
   },
   {
     initialRouteName: 'DeckListScreen',
+    cardStyle: {
+      paddingTop: Platform.OS === 'ios' ? 0 : Constants.statusBarHeight
+    },
     navigationOptions: ({ navigation }) => ({
       headerMode: 'screen',
       headerStyle: {

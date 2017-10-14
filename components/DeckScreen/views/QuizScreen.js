@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { StyleSheet, Text, View, ImageBackground } from 'react-native'
 import * as Progress from 'react-native-progress'
 import { white } from '../../../utils/colors'
-import { getBgImage } from '../../../utils/bgImages'
+import { getBgImage, IMAGE_RESIZE_MODE } from '../../../utils/bgImages'
 import { correctButtonEventName , incorrectButtonEventName } from '../../../utils/const'
 import Card  from '../Quiz/Card'
 import Score  from '../Quiz/Score'
@@ -51,7 +51,7 @@ class QuizScreen extends Component {
     const  { cards, currentCard, totalCard, correctCount } = this.state
 
     return (
-      <ImageBackground resizeMode="repeat" style={styles.container} source={getBgImage(index)}>
+      <ImageBackground resizeMode={IMAGE_RESIZE_MODE} style={styles.container} source={getBgImage(index)}>
         {currentCard > totalCard
           ? (
             <Score

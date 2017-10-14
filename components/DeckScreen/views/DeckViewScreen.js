@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { StyleSheet, Text, View, ImageBackground } from 'react-native'
 import { connect } from 'react-redux'
 import { white, gray } from '../../../utils/colors'
-import { getBgImage } from '../../../utils/bgImages'
+import { getBgImage, IMAGE_RESIZE_MODE } from '../../../utils/bgImages'
 import TextButton  from '../../TextButton'
 import DeckButton  from '../../DeckButton'
 
@@ -21,7 +21,7 @@ class DeckViewScreen extends Component {
     const  { index, questionCount , deck, navigation } = this.props
 
     return (
-      <ImageBackground resizeMode="repeat" style={styles.container} source={getBgImage(index)}>
+      <ImageBackground resizeMode={IMAGE_RESIZE_MODE} style={styles.container} source={getBgImage(index)}>
         <View style={styles.titleContainer}>
           <View style={styles.deck}>
             <View style={styles.deckTitleContainer}>

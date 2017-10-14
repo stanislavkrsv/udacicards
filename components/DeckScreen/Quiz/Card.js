@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { StyleSheet, Text, View, TouchableOpacity, Animated } from 'react-native'
 import PropTypes from 'prop-types'
+import { Platform } from 'react-native'
 import  { MaterialCommunityIcons } from '@expo/vector-icons'
 import { correctButtonEventName , incorrectButtonEventName } from '../../../utils/const'
 import  {
@@ -24,7 +25,7 @@ class Card extends Component {
 
   state = {
     isFlipped: false,
-    useNativeDriver: true,
+    useNativeDriver: (Platform.OS === 'ios'),
     rotate: new Animated.Value(0),
     opacity: new Animated.Value(0),
     bounceValue: new Animated.Value(1)

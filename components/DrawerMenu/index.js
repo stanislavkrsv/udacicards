@@ -3,14 +3,14 @@ import { StyleSheet, Text, View, Image, ImageBackground, Linking, TouchableOpaci
 import { gray } from '../../utils/colors'
 import { Constants } from 'expo'
 import { DrawerItems } from 'react-navigation'
-import { getBgImage } from '../../utils/bgImages'
+import { getBgImage, IMAGE_RESIZE_MODE } from '../../utils/bgImages'
 
 class DrawerMenu extends Component {
   render() {
     return(
       <View style={styles.container}>
         <StatusBar barStyle='light-content' />
-        <ImageBackground style={styles.header} resizeMode="repeat" source={getBgImage(0)}>
+        <ImageBackground style={styles.header} resizeMode={IMAGE_RESIZE_MODE} source={getBgImage(0)}>
           <Image source={require('./../../assets/images/icon.png')} style={styles.headerIcon} resizeMode='contain'/>
         </ImageBackground>
         <DrawerItems {...this.props} />

@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { NavigationActions } from 'react-navigation'
 import { addQuestion } from '../../../actions'
 import { white, gray } from '../../../utils/colors'
-import { getBgImage } from '../../../utils/bgImages'
+import { getBgImage, IMAGE_RESIZE_MODE } from '../../../utils/bgImages'
 import DeckButton  from '../../DeckButton'
 
 class NewQuestionScreen extends Component {
@@ -41,7 +41,7 @@ class NewQuestionScreen extends Component {
     const  { index, deck } = navigation.state.params
 
     return (
-      <ImageBackground resizeMode="repeat" style={styles.container} source={getBgImage(index)}>
+      <ImageBackground resizeMode={IMAGE_RESIZE_MODE} style={styles.container} source={getBgImage(index)}>
         <View style={styles.titleContainer} >
           <View style={styles.deck}>
             <View style={styles.deckTitleContainer}>

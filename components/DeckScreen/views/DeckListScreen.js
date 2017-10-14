@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { StyleSheet, Text, View, FlatList, TouchableOpacity, ImageBackground } from 'react-native'
 import { blue, white } from '../../../utils/colors'
-import { getBgImage } from '../../../utils/bgImages'
-
+import { getBgImage, IMAGE_RESIZE_MODE } from '../../../utils/bgImages'
 
 class DeckListScreen extends Component {
 
@@ -13,7 +12,7 @@ class DeckListScreen extends Component {
     const { navigation } = this.props
     return (
       <TouchableOpacity onPress={()=> navigation.navigate('DeckViewScreen', {index : index, id : item.id, title: item.title})} >
-        <ImageBackground resizeMode="repeat"  source={getBgImage(index)}  style={styles.item}>
+        <ImageBackground resizeMode={IMAGE_RESIZE_MODE}  source={getBgImage(index)}  style={styles.item}>
           <View style={styles.itemTextBlock}>
             <Text style={styles.itemTextTitle}>{item.title}</Text>
             <Text style={styles.itemTextQuantity}>{item.questions.length} cards</Text>

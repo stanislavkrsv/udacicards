@@ -9,7 +9,7 @@ import MainNavigation from './components/navigationConfiguration'
 export default class App extends React.Component {
 
   componentDidMount() {
-    setLocalNotification();
+    setLocalNotification()
   }
 
   state = {
@@ -32,6 +32,5 @@ export default class App extends React.Component {
         <MainNavigation/>
       </Provider>
     )
-
   }
 }
