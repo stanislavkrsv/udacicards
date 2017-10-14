@@ -7,7 +7,7 @@ Built during [Udacity React Nanodegree Program](https://www.udacity.com/course/r
 
 
 # Video
-[![UdaciCards Video](/assets/images/video.jpg?raw=true)](https://www.youtube.com/watch?v=j71n1whTuFk)
+[![UdaciCards Video](/assets/images/video.png?raw=true)](https://www.youtube.com/watch?v=j71n1whTuFk)
 
 # Screenshot
 ![UdaciCards Screenshot](/assets/images/screenshot.gif?raw=true)
