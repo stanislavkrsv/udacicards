@@ -7,10 +7,10 @@ export const backgroundImages = [
   require('./../assets/bg/6.png'),
   require('./../assets/bg/8.png'),
   require('./../assets/bg/7.png'),
-  require('./../assets/bg/18.png'),
+  require('./../assets/bg/9.png'),
   require('./../assets/bg/10.png'),
 ]
 
 export function getBgImage(index) {
-  return backgroundImages[index % 9]
+  return backgroundImages[index % 10]
 }
