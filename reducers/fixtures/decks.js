@@ -10,6 +10,10 @@ export const defaultState = [
       {
         question: 'Where do you make Ajax requests in React?',
         answer: 'The componentDidMount lifecycle event'
+      },
+      {
+        question: 'How is React different?',
+        answer: 'React is a library focused on building UI components'
       }
     ]
   },
@@ -18,21 +22,13 @@ export const defaultState = [
     title: 'Javascript',
     questions: [
       {
-        question: 'What is React?',
-        answer: 'A library for managing user interfaces'
+        question: 'Can you assign a anonymous function to a variable?',
+        answer: 'Yes!'
       },
       {
-        question: 'Where do you make Ajax requests in React?',
-        answer: 'The componentDidMount lifecycle event'
+        question: 'Which of function of Array extracts a section of an array and returns a new array?',
+        answer: 'slice()'
       },
-      {
-        question: 'What is React?',
-        answer: 'A library for managing user interfaces'
-      },
-      {
-        question: 'Where do you make Ajax requests in React?',
-        answer: 'The componentDidMount lifecycle event'
-      }
     ]
   },
   {
@@ -40,30 +36,16 @@ export const defaultState = [
     title: 'Redux',
     questions: [
       {
-        question: 'What is React?',
-        answer: 'A library for managing user interfaces'
+        question: 'What is Redux?',
+        answer: 'Redux is a predictable state container for JavaScript apps'
       },
       {
-        question: 'Where do you make Ajax requests in React?',
-        answer: 'The componentDidMount lifecycle event'
+        question: 'When should I use Redux?',
+        answer: 'Always 😀'
       },
       {
-        question: 'Where do you make Ajax requests in React?',
-        answer: 'The componentDidMount lifecycle event'
-      }
-    ]
-  },
-  {
-    id: '5pi2319d',
-    title: 'React',
-    questions: [
-      {
-        question: 'What is React?',
-        answer: 'A library for managing user interfaces'
-      },
-      {
-        question: 'Where do you make Ajax requests in React?',
-        answer: 'The componentDidMount lifecycle event'
+        question: 'Can Redux only be used with React?',
+        answer: 'Redux can be used as a data store for any UI layer'
       }
     ]
   },
@@ -72,12 +54,12 @@ export const defaultState = [
     title: 'Udacity',
     questions: [
       {
-        question: 'What is React?',
-        answer: 'A library for managing user interfaces'
+        question: 'What are the prerequisites for this program?',
+        answer: 'HTML, CSS, JavaScript, Git, GitHub, NPM'
       },
       {
-        question: 'Where do you make Ajax requests in React?',
-        answer: 'The componentDidMount lifecycle event'
+        question: 'Is this program self-paced?',
+        answer: 'No'
       }
     ]
   },
@@ -86,12 +68,12 @@ export const defaultState = [
     title: 'CSS',
     questions: [
       {
-        question: 'What is React?',
-        answer: 'A library for managing user interfaces'
+        question: 'What is CSS?',
+        answer: 'Cascading Style Sheets'
       },
       {
-        question: 'Where do you make Ajax requests in React?',
-        answer: 'The componentDidMount lifecycle event'
+        question: 'What is CLASS selector?',
+        answer: 'Class selector is a "stand alone" class to which a specific style is declared'
       }
     ]
   },
@@ -124,85 +106,29 @@ export const defaultState = [
   },
   {
     id: 'e38zm81y',
-    title: 'PHP',
+    title: 'Laravel',
     questions: [
       {
-        question: 'What is React?',
-        answer: 'A library for managing user interfaces'
+        question: 'Artisan command to enable maintenance mode',
+        answer: 'artisan down'
       },
       {
-        question: 'Where do you make Ajax requests in React?',
-        answer: 'The componentDidMount lifecycle event'
+        question: 'Laravel helper method which name consists of only ONE letter?',
+        answer: 'x()'
       }
     ]
   },
   {
     id: 'sojq71ko',
-    title: 'Node',
-    questions: [
-      {
-        question: 'What is React?',
-        answer: 'A library for managing user interfaces'
-      },
-      {
-        question: 'Where do you make Ajax requests in React?',
-        answer: 'The componentDidMount lifecycle event'
-      }
-    ]
-  },
-  {
-    id: 'njfria8o',
     title: 'React Native',
     questions: [
       {
-        question: 'What is React?',
-        answer: 'A library for managing user interfaces'
+        question: 'Is every React developer also a React Native developer?',
+        answer: 'React developers are not React Native developers by default'
       },
       {
-        question: 'Where do you make Ajax requests in React?',
-        answer: 'The componentDidMount lifecycle event'
-      }
-    ]
-  },
-  {
-    id: 'j0grzjrn',
-    title: 'Java',
-    questions: [
-      {
-        question: 'What is React?',
-        answer: 'A library for managing user interfaces'
-      },
-      {
-        question: 'Where do you make Ajax requests in React?',
-        answer: 'The componentDidMount lifecycle event'
-      }
-    ]
-  },
-  {
-    id: '8tqhcaed',
-    title: 'HTML',
-    questions: [
-      {
-        question: 'What is React?',
-        answer: 'A library for managing user interfaces'
-      },
-      {
-        question: 'Where do you make Ajax requests in React?',
-        answer: 'The componentDidMount lifecycle event'
-      }
-    ]
-  },
-  {
-    id: 'xh1ivbe5',
-    title: 'React',
-    questions: [
-      {
-        question: 'What is React?',
-        answer: 'A library for managing user interfaces'
-      },
-      {
-        question: 'Where do you make Ajax requests in React?',
-        answer: 'The componentDidMount lifecycle event'
+        question: 'Will my React Native app work on Web?',
+        answer: 'Unfortunately, no 😢'
       }
     ]
   },
