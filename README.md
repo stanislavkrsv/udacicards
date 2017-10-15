@@ -1,4 +1,4 @@
-# UdaciCard 
+# UdaciCards 
 Mobile application (iOS and Android) that allows users to study collections of flashcards. 
 The app allow users to create different categories of flashcards called "decks", add flashcards to those decks, 
 then take quizzes on those decks.
@@ -33,4 +33,4 @@ Strongly recommend use iOS 😀
 
 
 ## License
-Readable is released under the [WTFPL License](LICENSE)
+UdaciCards is released under the [WTFPL License](LICENSE)
